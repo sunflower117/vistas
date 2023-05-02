@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+    margin:auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+.recordatorio {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.nombres {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.nombre {
+    float: left;
+    margin-top: 20px;
+}
+
+.apellido {
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}

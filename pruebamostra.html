@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/pruebabeta.css">
+
+</head>
+<body>
+    <section class="contenedor">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenido-foto">
+                            <img src="img/image1.jpg">
+                            <p class="descripcion">Camisa para salir</p>
+                            <span class="precio">$20000</span>
+                        </div>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenido-foto">
+                        <img src="img/image1.jpg">
+                        <p class="descripcion">Camisa para salir</p>
+                        <span class="precio">$20000</span>
+                    </div>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenido-foto">
+                        <img src="img/image2.jpg">
+                        <p class="descripcion">Hola</p>
+                        <span class="precio">$10000</span>
+                    </div>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenido-foto">
+                        <img src="img/image1.jpg">
+                        <p class="descripcion">Hola</p>
+                        <span class="precio">$10000</span>
+                    </div>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenido-foto">
+                        <img src="img/Ky.jpg">
+                        <p class="descripcion">Hola</p>
+                        <span class="precio">$10000</span>
+                    </div>
+                </div>
+</div>
+
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenido-foto">
+                        <img src="img/Ky.jpg">
+                        <p class="descripcion">Hola</p>
+                        <span class="precio">$10000</span>
+                    </div>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenido-foto">
+                        <img src="img/Ky.jpg">
+                        <p class="descripcion">Hola</p>
+                        <span class="precio">$10000</span>
+                    </div>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenido-foto">
+                        <img src="img/Ky.jpg">
+                        <p class="descripcion">Hola</p>
+                        <span class="precio">$10000</span>
+                    </div>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenido-foto">
+                        <img src="img/Ky.jpg">
+                        <p class="descripcion"> Hola </p>
+                        <span class="precio">$10000</span>
+                    </div>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenido-foto">
+                        <img src="img/Ky.jpg">
+                        <p class="descripcion">Hola</p>
+                        <span class="precio">$10000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                <i class='bx bxs-x-circle'></i>
+            </div>
+            <div class="info">
+                <model-viewer src="https://cdn.glitch.me/f0cbf730-f4a7-49cd-a820-a85366aa9dd5/chinese_fantasy_03_-_revisited%20(1).glb?v=1681756404317"  ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" alt="" id="model-viewer">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                </model-viewer>
+
+                <h2 id="modelo">Ropa</h2>
+                <p id="descripcion">Descripcion del modelo</p>
+                <span class="precio" id="precio">$1000</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">Size</label>
+                        <select name="" id="">
+                            <option value="">S</option>
+                            <option value="">L</option>
+                            <option value="">M</option>
+                            <option value="">XL</option>
+                        </select>
+                    </div>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

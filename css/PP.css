@@ -1,0 +1,29 @@
+body {
+    background: #ffffff;
+}
+.form{
+    border: 2px, solid #94B6FF;
+}
+
+.navbarDropdown{
+    background-color: #94B6FF;
+}
+
+.titulo{
+font-family:'Dancing Script', cursiva;
+
+    text-align: center;
+    margin: 1px;
+}
+
+.nav-item{
+    font-family:  'Aboreto', cursiva;
+    
+
+}
+
+.container-Carousel{
+    width: 70%;
+    margin: 20px;
+    text-align: center;
+}
