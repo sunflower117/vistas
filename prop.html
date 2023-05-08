@@ -1,21 +1,16 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nous</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <title>Harvest vase</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+  <link rel="stylesheet" href="css/prop.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-
-    <!-- Barra de busqueda -->
-    <nav class="navbar navbar-white bg-white">
+     <!-- Barra de busqueda -->
+     <nav class="navbar navbar-white bg-white">
         <div class="container">
             <img src="img/logotipo.jpg" class="rounded-circle" alt="" width="90" height="84"
                 class="d-inline-block align-text-top">
@@ -86,51 +81,32 @@
     </nav>
     <!-- Fin del menu -->
 
-    <!-- <section id="hero">
-        <h4>Nous</h4>
-        <h2>Tu tienda de confianza</h2>
-        <h1>Bienvenido</h1>
-        <p>Aqui encontraras Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium similique ad numquam
-            ratione, illo rem aperiam quis libero in error dicta recusandae assumenda praesentium a ipsam blanditiis
-            possimus dolore eaque!</p>
-        <button>Comprar</button> -->
-        <center>
+    <!-- Aqui esta la tarjeta que contiene la imagen  -->
+  <div class="wrapper">
+    <div class="product-img">
         <model-viewer src="https://cdn.glitch.me/f0cbf730-f4a7-49cd-a820-a85366aa9dd5/chinese_fantasy_03_-_revisited%20(1).glb?v=1681756404317"  ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" alt="" id="model-viewer" width="80px" height="60px">
             <div class="progress-bar hide" slot="progress-bar">
                 <div class="update-bar"></div>
             </div>
         </model-viewer>
-        </center>
-    <!-- </section> -->
+    </div>
+    <!-- Aqui esta la tarjeta que contiene la imagen  -->
 
-    <h2 class="section-title">Categorias</h2>
-    <section id="feature" class="section-p1">
-        <!-- Colocar enlaces -->
-        <div class="fe-box">
-            <img src="img/I1.png" class="image" alt="">
-            <h6>Comprar</h6>
-        </div>
 
-        <div class="fe-box">
-            <img src="img/I2.png" class="image" alt="">
-            <h6>Comprar</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/I3.png" class="image" alt="">
-            <h6>Comprar</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/I6.png" class="image" alt="">
-            <h6>Comprar</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/I7.png" class="image" alt="">
-            <h6>Comprar</h6>
-        </div>
-    </section>
+    <!-- Aqui va la descripcion y informacion del producto -->
+    <div class="product-info">
+      <div class="product-text">
+        <h1>Harvest Vase</h1>
+        <h2>by studio and friends</h2>
+        <p>Harvest Vases are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+      </div>
+      <div class="product-price-btn">
+        <p><span>78</span>$</p>
+        <button type="button">buy now</button>
+      </div>
+    </div>
+  </div>
+    <!-- Fin de la descripcion y informacion del producto -->
 
     <h2 class="section-title">Productos</h2>
     <section class="productos">
@@ -203,34 +179,17 @@
         </div>
     </section>
 
-
-
-
-
-
-    <section id="banner" class="section-m1">
-        <h6>¿Tienes un emprendimiento?</h6>
-        <h2>Publicalo aca y -<span>Haz parte del equipo</span> Nous</h2>
-        <button class="normal">Registrate</button>
+    <!-- Aqui va el banner de derechos de autor -->
+    <section class="banner">
+        <h6>Todos los derechos de autor reservados&LondepNous</h6>
     </section>
 
-   
-    <footer class="banner">
-        <h6>Todos los derechos de autor reservados&LondepNous</h6>
-    </footer>
-
-
-    <!-- Scripts -->
-
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="js/index.js"></script>
-<!-- Scripts -->
+    <!-- Aqui van los scripts -->
+    <!-- Script de modulo 3d -->
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  <!-- Fin del script modulo 3d -->
+ 
+  <script src="js/prop.js"></script>
 </body>
 
 </html>
