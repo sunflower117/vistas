@@ -1,0 +1,132 @@
+.formContent {}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+    height: 100vh;
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    overflow-x: hidden;/* Oculta la barra de desplazamiento */
+    margin-bottom: 100px;
+    background-color: rgb(228, 236, 236);
+    border-radius: 10px;
+    border-style: none;
+}
+
+.formulario{
+    margin-top: 4px;
+    border-radius: 2px;
+    width: 70%;
+    display:flex;
+    margin: auto;
+    margin-bottom: 2rem;
+    background-color:transparent;
+    border: none;
+    border-bottom: rgb(252, 248, 248) thin solid;
+    text-align: center;
+    outline: none;
+    padding: .2rem 0;
+    font-size: .9rem;
+    color:rgb(15, 14, 14);
+}
+
+.formulario h2{
+    margin-top: 12px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+/* Establece un ancho máximo para los elementos dentro del div */
+.screen * {
+    max-width: 100%;
+}
+
+/* Ajusta el tamaño de los elementos a medida que cambia el tamaño de la pantalla */
+@media only screen and (max-width: 768px) {
+    .screen {
+        width: 100%;
+    }
+
+    .nombre,
+    .apellido {
+        float: none;
+        margin-left: 0;
+    }
+
+    /* Ajusta el tamaño de la fuente a medida que cambia el tamaño de la pantalla */
+    .conVendedor,
+    .nomProducto,
+    .desProducto,
+    .form-check-label {
+        font-size: 16px;
+    }
+}
+
+.recordatorio {
+    font-family: 'Varela Round', sans-serif;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.nombres {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.apellido {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.conVendedor {
+    width: 100%;
+}
+
+.apellido,
+.conVendedor,
+.nomProducto {
+    margin-bottom: 10px;
+}
+
+.nomProducto {
+    width: 100%;
+}
+
+.areaTexto {
+    float: left;
+}
+
+
+
+.btnenviar {
+    justify-content: center;
+    border-radius: 20px;
+    padding: 2px;
+    background-color: rgb(14, 13, 12);
+    color: white;
+    width: 90px;
+    border-style: none;
+}
+
+.btnenviar:hover {
+    color: rgb(255, 255, 255); /* Cambia el color del texto dentro del boton cuando se le pasa el mouse por encima*/
+    background-color: blue;/* Cambia el color del boton cuando se le pasa el mouse por encima*/
+}
+
+.nomProducto, .nombre, .apellido, .conVendedor {
+    border-style: none;
+    border-radius: 4px;
+}
