@@ -39,7 +39,7 @@
     margin-top: 12px;
 }
 
-
+ 
 .content {
     display: flex;
     flex-direction: column;
@@ -81,34 +81,10 @@
     margin-bottom: 10px;
 }
 
-.nombres {
+.areaTexto {
     width: 100%;
-    margin-top: 10px;
-}
-
-.apellido {
-    width: 100%;
-    margin-top: 10px;
-}
-
-.conVendedor {
-    width: 100%;
-}
-
-.apellido,
-.conVendedor,
-.nomProducto {
     margin-bottom: 10px;
 }
-
-.nomProducto {
-    width: 100%;
-}
-
-.areaTexto {
-    float: left;
-}
-
 
 
 .btnenviar {
