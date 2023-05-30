@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --body-color: #ffff;
+    --sidebar-color: #75BDE0;
+    --primary-color: #e61e1e;
+    --primary-color-light: #000000;
+    --text-color: #000000;
+    --toggle-color: #DDDDDD;
+
+    --tran-03: all 0.2s ease;
+    --tran-04: all 0.3s ease;
+    --tran-05: all 0.4s ease;
+}
+
+
+body {
+    min-height: 100vh;
+    background-color: var(--body-color);
+    transition: var(--tran-05);
+}
+
+
+
+
+::selection {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+
+
+/* Aqui definimos las variables cuando se agregue la clase de dark */
+body.dark {
+    --body-color: #18191A;
+    --primary-color: #242528;
+    --toggle-color: #FFFFFF;
+    --primary-color-light: #3A383C;
+    --text-color: #CCCCCC;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 1px;
+    height: 100vh;
+    width: 280px;
+    padding: 5px 14px;
+    background-color: var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar.close {
+    width: 80px;
+}
+
+
+.sidebar li {
+    height: 60px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .icon {
+    border-radius: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    min-width: 20px;
+    padding-right: 70px ;
+}
+
+
+
+.sidebar .text,
+.sidebar .icon {
+    color: var(--text-color);
+    transition: var(--tran-03);
+}
+
+.sidebar .text .img{
+    margin-top: 2px;
+}
+
+
+.sidebar .text {
+    font-size: 15px;
+    font-weight: 500;
+    opacity: 6;
+    white-space: nowrap;
+}
+
+/* Esto significa que cuando este en close, el texto no aparezcak */
+.sidebar .close .text {
+    opacity: 0;
+}
+
+.sidebar header {
+    position: relative;
+}
+
+.sidebar header .logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    margin-top: 1px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.profe {
+    font-size: 16px;
+    display: block;
+    margin-top: -2px;
+}
+
+
+
+.sidebar header .toggle {
+    position: absolute;
+    top: 10%;
+    right: 6px;
+    height: 25px;
+    width: 40px;
+    background-color: var(--text-color);
+    color: var(--sidebar-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--tran-03);
+    border-radius: 4px;
+}
+
+body.dark .sidebar header .toggle {
+    color: var(--text-color);
+}
+
+.sidebar .close .toggle {
+    width: 20%;
+    top: 40%;
+}
+
+
+.sidebar .menu {
+    margin-top: 10px;
+}
+
+
+
+.sidebar li a {
+    list-style: none;
+    height: 100%;
+    background-color: transparent;
+    align-items: center;
+    height: 80%;
+    width: 80%;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: var(--tran-03);
+    display: flex;
+    padding: 10px 10px 10px 10px ;
+}
+
+
+.sidebar li a:hover {
+    background-color: var(--primary-color);
+}
+
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text {
+    color: var(--sidebar-color);
+}
+
+.sidebar .menu-bar {
+    height: calc(100% -105px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+.menu-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar .menu-bar .mode {
+    border-radius: 6px;
+    background-color: var(--primary-color-light);
+    position: relative;
+    transition: var(--tran-05);
+}
+
+
+.menu-bar .sun-moon i {
+    position: absolute;
+}
+
+.mode .sun-moon i.sun {
+    opacity: 0;
+}
+
+body.dar .mode .sun-moon i.sun {
+    opacity: 1;
+}
+
+body.dark .sun-moon i.moon {
+    opacity: 0;
+}
+
+
+
+
+
+.switch::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 25px;
+    border-radius: 50%;
+    left: 10px;
+    top: 10%;
+    transform: translate(-50%);
+    background-color: var(--sidebar-color);
+    transition: var(--tran-04);
+}
+
+
+body.dark .switch::before {
+    left: 20px;
+}
+
+.home {
+    background-color: #e61e1e;
+    top: 0;
+    left: 250px;
+    height: 80px;
+    position: absolute;
+    transition: var(--tran-05);
+}
+
+.home .text {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 12px 60px;
+
+}
+
+.sidebar.close~.home {
+    left: 70px;
+
+    height: 100vh;
+    width: calc(100% -70px);
+}
+
+.informacion {
+    background-color: #242528;
+    height: 80px ;
+}
